@@ -14,3 +14,16 @@ jobs:
         run: npm install
       - name: running tests
         run: npm test
+  build:
+    runs-on: ubuntu-slim
+    steps:
+      - name: getting my code first
+        uses: actions/checkout@v6
+      - name: installing node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.15.1'
+      - name: installing dependencies
+        run: npm install     
+      - name: start my server
+        run: npm start
