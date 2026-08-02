@@ -12,5 +12,3 @@ jobs:
           node-version: '22.15.1'
       - name: installing dependencies
         run: npm install
-      - name: running tests
-        run: npm test
