@@ -15,6 +15,7 @@ jobs:
       - name: running tests
         run: npm test
   build:
+    needs: test
     runs-on: ubuntu-slim
     steps:
       - name: getting my code first
