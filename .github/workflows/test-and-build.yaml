@@ -1,7 +1,5 @@
 name: Testing and Building my app
-on:
-  pull_request:
-    types: [opened, closed]
+on: push
 jobs:
   test:
     runs-on: ubuntu-slim
